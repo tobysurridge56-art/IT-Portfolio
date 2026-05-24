@@ -71,7 +71,7 @@ Everything in my lab mirrors a real small business IT environment. I use it to p
 
 ## 📊 GitHub Stats
 
-![Tobiloba's GitHub Stats](https://github-readme-stats.vercel.app/api?username=TobilobaOyerogba&show_icons=true&theme=dark&hide_border=true)
+![Tobiloba's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tobysurridge56-art&show_icons=true&theme=dark&hide_border=true)
 
 ---
 
