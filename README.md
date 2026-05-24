@@ -1,8 +1,7 @@
-# Hi, I'm Tobiloba Oyerogba 👋
+# IT Portfolio — Tobiloba Oyerogba
 
-## IT Support | Cybersecurity | Data Analysis
-
-I'm an aspiring IT professional actively building hands-on skills across Help Desk, Cybersecurity, and Data Analysis. I learn by doing — every project in this profile is something I built, configured, or broke and fixed myself.
+A collection of hands-on IT labs and projects built in a personal home lab environment.
+Everything here is practical work — configured, tested, and documented by me.
 
 ---
 
@@ -17,70 +16,85 @@ I'm an aspiring IT professional actively building hands-on skills across Help De
 
 ---
 
-## 🛠️ Technical Skills
+## 🔬 Home Lab Environment
 
-**Operating Systems**
-Windows Server 2022 • Windows 11 Pro • Ubuntu 22.04 LTS
+| Component | Detail |
+|-----------|--------|
+| Virtualisation | Oracle VirtualBox |
+| Domain Controller | Windows Server 2022 — tobilab.local |
+| Client Machine | Windows 11 Pro — joined to domain |
+| Linux Machine | Ubuntu 22.04 LTS |
+| Network | VirtualBox Host-only Adapter — 192.168.56.0/24 |
+| Server IP | 192.168.56.10 (static) |
+| Client IP | 192.168.56.20 (static) |
 
-**Active Directory & Identity Management**
-Domain Controller setup • OU structure design • User & group management •
-Group Policy Objects (GPOs) • Password resets • Account lockouts • Bulk user creation via PowerShell
+---
+
+## 📁 Projects
+
+### 01 — ServiceNow Incident Management
+**Tools:** ServiceNow Personal Developer Instance  
+**What I did:** Created and resolved 10 realistic IT support tickets covering hardware, software, network, access management, and service requests. Each ticket includes a full description, correct priority and category classification, and detailed resolution notes.  
+👉 [View project](./01-ServiceNow-Incident-Management)
+
+---
+
+### 02 — Active Directory Lab
+**Tools:** Windows Server 2022 • Active Directory Domain Services • Group Policy Management Console • PowerShell  
+**What I did:** Built a full Active Directory domain from scratch — created the domain controller, designed a 4-OU organisational structure, created user accounts and security groups, configured Group Policy Objects, and practised core Help Desk tasks including password resets, account unlocks, and user migration between OUs.  
+👉 [View project](./02-Active-Directory-Lab)
+
+---
+
+### 03 — PowerShell Bulk User Creation
+**Tools:** PowerShell • Active Directory  
+**What I did:** Wrote a PowerShell script that reads a CSV file and automatically bulk-creates Active Directory user accounts, reducing manual account creation from 30 minutes to under 10 seconds for a batch of 10 users.  
+👉 [View project](./03-PowerShell-Scripts)
+
+---
+
+### 04 — Network Configuration Lab
+**Tools:** VirtualBox • TCP/IP • DNS  
+**What I did:** Configured static IP addresses and DNS settings on both VMs, set up Host-only networking so the VMs could communicate, and verified connectivity using ping, ipconfig, and nslookup. This network configuration is the foundation for the Active Directory domain join.  
+👉 [View project](./04-Network-Configuration)
+
+---
+
+## 🛠️ Skills Demonstrated Across Projects
+
+**Help Desk & ITSM**
+- ServiceNow incident management and ticket lifecycle
+- ITIL-aligned priority classification and resolution documentation
+- Active Directory user management — create, reset, unlock, disable, move
 
 **Networking**
-Static IP configuration • DNS • DHCP • TCP/IP • Subnetting • Ping & tracert diagnostics • Host-only & bridged networking in VirtualBox
+- Static IP and DNS configuration
+- Host-only VM networking
+- Connectivity testing with ping, tracert, nslookup, ipconfig
 
-**Security Tools**
-Wireshark • Splunk (SIEM) • TryHackMe SOC Level 1 • MITRE ATT&CK framework
-
-**ITSM & Ticketing**
-ServiceNow (Personal Developer Instance) • Incident management • ITIL framework basics
+**Systems Administration**
+- Windows Server 2022 — roles, features, domain promotion
+- Active Directory Domain Services — OUs, users, groups, GPOs
+- Group Policy — password policy, screen lock, account lockout
 
 **Scripting & Automation**
-PowerShell — bulk AD user creation from CSV • Basic scripting & automation
+- PowerShell — New-ADUser, Import-Csv, foreach loops, bulk automation
 
-**Data Analysis**
-SQL (SQLZoo • SQL Murder Mystery) • Python (pandas • matplotlib • seaborn) • Power BI • Excel / Google Sheets
+**Security**
+- ISC2 CC certified — security principles, access control, incident response
+- Group Policy security controls — USB blocking, account lockout, least privilege
+- Windows event log analysis — Event IDs 4625, 4672, 4688
 
 **Virtualisation**
-VirtualBox • Multi-VM lab environments • Domain join & network configuration
+- VirtualBox multi-VM environment
+- Windows Server and Windows 11 installation and configuration
+- Domain join and network troubleshooting across VMs
 
 ---
 
-## 🔬 Home Lab
-
-I run a personal virtualised IT lab on my laptop using VirtualBox:
-
-- **Windows Server 2022** — Domain Controller running Active Directory, DNS, and Group Policy
-- **Windows 11 Pro** — Client machine joined to the domain (tobilab.local)
-- **Ubuntu 22.04** — Linux practice environment
-
-Everything in my lab mirrors a real small business IT environment. I use it to practice daily Help Desk tasks, security configurations, and scripting — and document everything here on GitHub.
-
----
-
-## 📁 Portfolio Projects
-
-| Project | What I did | Tools |
-|---------|-----------|-------|
-| [Active Directory Lab](./02-Active-Directory-Lab) | Built a full AD domain from scratch — OUs, users, groups, GPOs, domain join | Windows Server 2022 • AD DS • PowerShell |
-| [ServiceNow Incident Management](./01-ServiceNow-Incident-Management) | Created and resolved 10 realistic IT support tickets | ServiceNow PDI |
-| [PowerShell Bulk User Creation](./03-PowerShell-Scripts) | Scripted bulk AD user creation from a CSV file | PowerShell • Active Directory |
-| [Network Configuration Lab](./04-Network-Configuration) | Configured static IPs, DNS, and VM networking for a two-machine domain | VirtualBox • TCP/IP • DNS |
-
----
-
-## 📊 GitHub Stats
-
-![Tobiloba's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tobysurridge56-art&show_icons=true&theme=dark&hide_border=true)
-
----
-
-## 📫 Connect with me
+## 📫 Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/tobiloba-oyerogba)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-Profile-red?style=flat&logo=tryhackme)](https://tryhackme.com/p/tobbyoyerogba)
 
----
-
-> *"Every expert was once a beginner who refused to give up."*
-> Currently building — check back regularly as new projects are added.
+> Projects are added regularly as new labs are completed.
